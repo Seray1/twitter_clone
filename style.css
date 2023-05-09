@@ -324,6 +324,30 @@ gap: 1em;
   align-self: flex-end;
 }
 
+
+/* styling the middle section */
+.header{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  border-bottom: .1em solid #aab8c23c;
+}
+.header div{
+  display: flex;
+  justify-content: space-around;
+}
+.header div .f1{
+  position: relative;
+}
+.header div .f1::before{
+position: absolute;
+content: "";
+width: 100%;
+background-color: var(--twitter-blue);
+pad: 1em;
+}
+
   
 @keyframes blink {
   0% {
