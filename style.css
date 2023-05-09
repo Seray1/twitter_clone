@@ -342,10 +342,11 @@ gap: 1em;
 }
 .header div .f1::before{
 position: absolute;
-content: "";
+content: "jj";
 width: 100%;
 background-color: var(--twitter-blue);
 pad: 1em;
+bottom: 0;
 }
 
   
