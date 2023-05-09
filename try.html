@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Twitter Clone Search</title>
+  <style>
+    .search-box {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .search-box input {
+      width: 200px;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    
+    .suggestion-container {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 200px;
+      max-height: 200px;
+      overflow-y: auto;
+      background-color: blue;
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+      border-radius: 4px;
+      z-index: 1;
+      display: none;
+    }
+    
+    .suggestion-container ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    
+    .suggestion-container li {
+      padding: 10px;
+      cursor: pointer;
+    }
+    
+    .suggestion-container li:hover {
+      background-color: red;
+      /* display: block; */
+    }
+    .search-box input:focus ~ .suggestion-container{
+        display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="search-box">
+    <input type="text" placeholder="Search Twitter">
+    <div class="suggestion-container">
+      <ul>
+        <li>John Doe</li>
+        <li>Jane Doe</li>
+        <li>John Smith</li>
+        <li>Jane Smith</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
