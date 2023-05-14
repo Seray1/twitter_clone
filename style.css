@@ -48,7 +48,7 @@ main{
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
+    gap: 1.35em;
     margin-left: 15%;
     margin-top: 1em;
     
@@ -229,6 +229,10 @@ input[type="text"]::placeholder {
     width: fit-content;
 
   }
+  .spaces_content2 h2{
+    font-size: 1.5em;
+
+  }
   .circle{
     position: relative;
     right: .2em;
@@ -265,6 +269,9 @@ input[type="text"]::placeholder {
     flex-direction: column;
     gap: 1em;
 }
+.trends h2{
+  font-size: 1.5em;
+}
 .trends div h4{
   color: var(--twitter-dark-gray);
 }
@@ -279,7 +286,7 @@ input[type="text"]::placeholder {
   border-radius: 1em;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 1.5em;
 }
 .follow .follow_container{
   display: flex;
@@ -302,6 +309,12 @@ gap: 1em;
 }
 .follow p{
   color: var(--twitter-blue);
+}
+.d1 h3{
+  font-size: 1em;
+}
+.d1 h4{
+  color: var(--twitter-dark-gray);
 }
 .right-side .p1{
   color: var(--twitter-dark-gray);
